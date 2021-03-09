@@ -9,23 +9,23 @@ namespace ConsoleRender
 	public class Camera
 	{
 		public static Camera main;
-		public Vector2 Position { get; set; }
-		public Vector2 Size { get; set; }
-		Vector2 limits;
+		public Vec2 Position { get; set; }
+		public Vec2 Size { get; set; }
+		Vec2 limits;
 
-		public Camera(Vector2 position, Vector2 size, Vector2 canvasSize)
+		public Camera(Vec2 position, Vec2 size, Vec2 canvasSize)
 		{
 			Position = position;
 			Size = size;
-			limits = canvasSize - size - Vector2.One;
+			limits = canvasSize - size - Vec2.One;
 		}
 
-		public void MoveTo(Vector2 newPos)
+		public void MoveTo(Vec2 newPos)
 		{
-			Position = new Vector2(Mathf.Clamp(newPos.x, 0, limits.x), Mathf.Clamp(newPos.y, 0, limits.y));
+			Position = new Vec2(MathEx.Clamp(newPos.x, 0, limits.x), MathEx.Clamp(newPos.y, 0, limits.y));
 		}
 
-		public void Move(Vector2 deltaPos)
+		public void Move(Vec2 deltaPos)
 		{
 			MoveTo(Position + deltaPos);
 		}
