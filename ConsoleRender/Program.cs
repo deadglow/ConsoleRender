@@ -5,7 +5,7 @@ using System.Diagnostics;
 
 namespace ConsoleRender
 {
-	class Program
+	public class Program
 	{
 		static readonly short height = 144;
 		static readonly short width = 160;
@@ -19,7 +19,6 @@ namespace ConsoleRender
 
 		static void Main(string[] args)
 		{
-
 
 			sprite.LoadSpriteFromFile(directoryOffset);
 			banan.LoadSpriteFromFile(directoryOffset);
