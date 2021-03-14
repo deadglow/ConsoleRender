@@ -307,9 +307,6 @@ namespace ConsoleRender
 			//Must be made public as a ref is used to access
 			public SmallRect rect;
 
-			//Cached variables
-			int bufferPos;
-
 			public Coord Size
 			{
 				get
@@ -335,7 +332,7 @@ namespace ConsoleRender
 				if (x < 0 || x >= size.X || y < 0 || y >= size.Y)
 					return false;
 
-				bufferPos = y * size.X + x;
+				int bufferPos = y * size.X + x;
 				buffer[bufferPos].Char.UnicodeChar = text;
 				buffer[bufferPos].Attributes = (short)((int)bgCol << 4 | ((int)fgCol));
 

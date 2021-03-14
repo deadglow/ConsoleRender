@@ -4,3 +4,4 @@ D:\User Files\Dev\repos\ConsoleRender\ConsoleRender\bin\Debug\ConsoleRender.dll
 D:\User Files\Dev\repos\ConsoleRender\ConsoleRender\bin\Debug\ConsoleRender.pdb
 D:\User Files\Dev\repos\ConsoleRender\ConsoleRender\obj\Debug\ConsoleRender.dll
 D:\User Files\Dev\repos\ConsoleRender\ConsoleRender\obj\Debug\ConsoleRender.pdb
+D:\User Files\Dev\repos\ConsoleRender\ConsoleRender\obj\Debug\ConsoleRender.csprojAssemblyReference.cache
